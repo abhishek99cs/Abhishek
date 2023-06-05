@@ -1,0 +1,15 @@
+.video img{
+    width: 250px;
+    height: 202px;
+    border-radius: 5px;
+}
+.videodata{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.video{
+    width: 250px;
+}
+
