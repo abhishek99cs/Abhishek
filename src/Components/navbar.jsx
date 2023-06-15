@@ -9,7 +9,7 @@ function Navbar() {
             <div className="searchbar"><input type="text" placeholder="Search"/></div>
             <div className="useroptions">
                 <img height={40}width={40} src={Alarm} alt="" />
-                <img height={40}width={40} src={Video} alt="" />
+                <a href=""><img height={40}width={40} src={Video} alt="" /></a>
                 <h1>A</h1>        
             </div>
         </div>
