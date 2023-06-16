@@ -3,6 +3,7 @@ import Navbar from './Components/navbar';
 import Home from './Components/home';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import AddVideos from './Components/AddVideo';
+import PageNotFound from './Components/PageNotFound';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/addVideos" element={<AddVideos/>}/>
+      <Route path="*" element={<PageNotFound/>}/>
     </Routes>
     </BrowserRouter>
     </div>

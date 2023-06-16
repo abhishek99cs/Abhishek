@@ -12,7 +12,7 @@ useEffect(()=>{
             setVideos(data);
         }
         fetchData();
-}, []);
+});
 useEffect(() => {
     let fetchData = async () => {
         let response = await fetch('http://localhost:4000/shorts');
@@ -22,9 +22,14 @@ useEffect(() => {
     fetchData();
 },[])
     let removeVideo=(id,channel)=>{
-        let result = videos.filter((x)=>x.id!==id)
-        setVideos(result)
+        fetch(`http://localhost:4000/videos/${id}`,{
+            method: 'DELETE'
+        })
         alert(`${channel} got deleted`)
+
+        // let result = videos.filter((x)=>x.id!==id)
+        // setVideos(result)
+        // alert(`${channel} got deleted`)    // deleteing temporary videos
     }
     return ( 
         <div className="videos">

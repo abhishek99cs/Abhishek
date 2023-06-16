@@ -6,13 +6,9 @@
 .videodata{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
-    
 }
 .video{
-    width: 300px;
-    margin-top: 10px;
+    width: 25%;
 }
 .video h3,.video h4,.video h5{
     margin: 0px;
@@ -24,16 +20,15 @@
     cursor: pointer;
 }
 .shortsdata img{
-    width: 200px;
-    height: 350px;
+    width: 235px;
+    height: 416px;
+    border-radius: 10px;
 }
 .shortsdata{
-    width: 200px;
+    width: 20%;
 }
 .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
 }
 
